@@ -1,0 +1,76 @@
+.cor{
+  background: #1B3270;
+}
+
+.menuHamburger{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  background: #F6FDFF;
+  border-radius: 100%;
+  padding: 12px;
+  opacity: 100%;
+  transition: .2s ease-in-out all;
+  z-index: 2;
+
+}
+
+#checkbox-menu{
+  position: absolute;
+  opacity: 0;
+}
+
+label{
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+
+label span{
+  position: absolute;
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 30px;
+  background: #1B3270;
+  transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1){
+  top: 0;
+}
+
+label span:nth-child(2){
+  top: 8px;
+}
+
+label span:nth-child(3){
+  top: 16px;
+}
+
+#checkbox-menu:checked + label span:nth-child(1){
+  transform: rotate(-45deg);
+  top: 8px;
+}
+
+#checkbox-menu:checked + label span:nth-child(2){
+  opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3){
+  transform: rotate(45deg);
+  top:8px;
+}
+
+@media (min-width: 550px) {
+  .menuHamburger{
+    display: hide;
+    opacity: 0;
+  }
+  label{
+    cursor:inherit;
+  }
+}

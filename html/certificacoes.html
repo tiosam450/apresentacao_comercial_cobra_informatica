@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação Comercial</title>
+    <link rel="shortcut icon" href="../img/logo_cobra.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function () {
+            $(".containerHeader").load("./header.html");
+        });
+    </script>
+</head>
+
+<body>
+    <section class="container">
+        <header>
+            <div class="containerHeader"></div>
+        </header>
+        <div class="menuHamburger">
+            <input type="checkbox" id="checkbox-menu">
+            <label for="checkbox-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <!-- Logística Reversa -->
+        <section class="conteudoPopUp" id="aquisicao">
+            <div class="fechar">
+                <img src="../img/icone_fechar.svg" alt="">
+            </div>
+
+            <div class="tituloPopUp">
+                <div class="iconePopUp"><img src="../img/icone_certificacoes.svg" alt=""></div>
+                <h1>Certificação</h1>
+            </div>
+            <div class="materiaPopUp">
+                <p>As Certificações são emitidas para nossos parceiros atestando que a gestão dos resíduos foram
+                    realizadas corretamente.</p><br>
+
+                    <div class="containerCertificacao">
+                        <div class="cardCertificacao">
+                            <div><img src="../img/selo_destruicao_de_dados.png" alt=""></div>
+                            <p><b>Certificado de destruição de dados para destruição dos equipamentos:</b><br><br>
+                                <b>Físico:</b> HDs, Celulares, DAT, DLT e Mídias Diversas.<br>
+                                <b>Digital:</b> Notebook, Desktops, Storage e Servidores.
+                            </p>
+                        </div>
+    
+                        <div class="cardCertificacao">
+                            <div><img src="../img/selo_descaracterizacao_2.png" alt=""></div>
+                            <p><b>Certificado de descaracterização de equipamentos de informática</b><br><br>
+                                Para equipamentos diversos de informática.
+                            </p>
+                        </div>
+    
+                        <div class="cardCertificacao">
+                            <div><img src="../img/selo_descarte_de_ativos.png" alt=""></div>
+                            <p><b>Certificado de descarte de equipamentos de informática</b><br><br>
+                                Para descarte regulamentado e de apoio a diminuição do impacto global.
+                            </p>
+                        </div>
+    
+                    </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <p>Cobra Informática 2023 © - Todos os direitos reservados</p>
+        </footer>
+
+    </section>
+    <script type="module" src="../scripts.js"></script>
+</body>
+
+</html>

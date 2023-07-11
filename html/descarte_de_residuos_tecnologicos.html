@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação Comercial</title>
+    <link rel="shortcut icon" href="../img/logo_cobra.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function () {
+            $(".containerHeader").load("./header.html");
+        });
+    </script>
+</head>
+
+<body>
+    <section class="container">
+        <header>
+            <div class="containerHeader"></div>
+        </header>
+        <div class="menuHamburger">
+            <input type="checkbox" id="checkbox-menu">
+            <label for="checkbox-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <!-- Descarte de Resíduos Tecnológicos -->
+        <section class="conteudoPopUp" id="aquisicao">
+            <div class="fechar">
+                <img src="../img/icone_fechar.svg" alt="">
+            </div>
+
+            <div class="tituloPopUp">
+                <div class="iconePopUp"><img src="../img/icone_reciclagem.svg" alt=""></div>
+                <h1>Descarte de Resíduos Tecnológicos</h1>
+            </div>
+            <div class="materiaPopUp">
+                <p>Equipamentos de informática possuem diversos componentes tóxicos em suas estruturas. Se descartados de maneira incorreta, esses resíduos tóxicos podem contaminar o solo e os lençóis freáticos, colocando em risco a saúde pública.</p><br>
+
+                <p><b>Nosso processo de descarte conta com as seguintes etapas:</b></p>
+
+                <div class="grafico">
+                    <img src="../img/grafico_2.svg" alt="">
+                </div>
+
+                <p>Após a triagem, partes e peças (sucatas) são separados e enviados para recicladoras, entenda o processo de reciclagem:</p><br>
+
+                <div class="listas">
+                    <div class="lista1">
+                        <p><b>Resíduo Eletrônico:</b></p>
+                        <p>A sucata eletrônica é processada em um conjunto de trituradores, moinhos, e divisores de amostras, entre os itens, destacam-se: placa mãe, de TV e monitores, modem, processadores, memórias, HDs, celulares e fontes. As amostras são submetidas a analises em laboratório garantindo relatórios confiáveis da quantidade de metais preciosos em cada lote. Os metais preciosos são minerados e transformados em matéria prima que retornam para as industrias de fabricação.
+                        </p>
+                    </div><br>
+
+                    <div class="lista2">
+                        <p><b>Resíduos não perigosos:</b></p>
+                        <p>A sucata proveniente dos equipamentos eletrônicos que são classificados como não perigosos, são em grande maioria carcaças compostas por metais, vidros, plástico e papel que também são processados e transformados em matéria prima que retornam para as industrias de fabricação.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <footer>
+            <p>Cobra Informática 2023 © - Todos os direitos reservados</p>
+        </footer>
+
+    </section>
+    <script type="module" src="../scripts.js"></script>
+</body>
+
+</html>

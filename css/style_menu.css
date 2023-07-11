@@ -1,0 +1,178 @@
+.menuAtivo{
+    color: white!important;
+}
+
+header{
+    grid-column: 1 / 2;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #2D4A9A, #1B3270);
+    z-index: 5;
+}
+
+.containerHeader{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 10px;
+}
+
+.cabecalho{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+}
+
+.logoCobra{
+    width: 100%;
+    max-width: 190px;
+    margin-top: 2rem;
+}
+
+.cabecalho p{
+    margin: 4rem 0 0;
+    font-size: .9rem;
+    align-self: flex-start;
+}
+
+header p, li{
+    color: white;
+}
+
+li{
+    font-size: .9rem;
+    padding: .8rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.247);
+}
+
+li a{
+    color: #74B5FF;
+}
+
+li a:hover{
+    color: white;
+}
+
+.social{
+    width: 85%;
+    min-width: 130px;
+    display: flex;
+    margin: 4rem 0 1rem;
+}
+
+.social a div{
+    max-width: 35px;
+    margin-right: 1rem;
+    cursor: pointer;
+    mix-blend-mode: soft-light;
+    transition: .2s ease-in-out all;
+}
+
+.social a div:hover{
+    transform: scale(1.05);
+    mix-blend-mode: normal;
+}
+
+@media (max-width: 1366px) {
+    .logoCobra{
+        width: 100%;
+        max-width: 170px;
+        margin-top: 2rem;
+    }
+    
+    li{
+        font-size: .8rem;
+        padding: .6rem 0;
+    }
+
+    .social{
+        width: 80%;
+        margin: 2rem 0 2rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .menu{
+        margin: -2rem 0 0 0;
+    }
+
+    li{
+        font-size: 1.1rem;
+    }
+    
+    header{
+        grid-column: 1;
+        position: fixed ;
+        top: 0;
+        margin-left: -550px;
+        width: 70%;
+        height: 100vh;
+        display: none;
+    }
+
+    .logoCobra{
+        width: 100%;
+        max-width: 190px;
+        margin-top: 2rem;
+    }
+
+    .cabecalho{
+        margin-bottom: 1rem;
+    }
+
+    .cabecalho p{
+        margin: 3rem 0 0;
+        font-size: .9rem;
+        align-self: flex-start;
+    }
+
+    .social{
+        width: 85%;
+        min-width: 130px;
+        display: flex;
+        margin: -2rem 0 1rem;
+    }
+
+    .headerAnimeEntrada{
+        grid-column: inherit;
+        position: fixed;
+        top: 0;
+        width: 70%;
+        height: 100vh;
+        animation: entrada .5s forwards ease-in-out;
+        margin-left: 0;
+        display: flex;
+    }
+
+    .headerAnimeSaida{
+        animation: saida .5s forwards ease-in-out;
+        margin-left: -550;
+        display: flex;
+    }
+
+    @keyframes entrada {
+        0%{
+            margin-left: -550px;
+        }
+        100%{
+            margin-left: 0;
+        }
+    }
+    
+    @keyframes saida {
+        100%{
+            margin-left: -550px;
+        }
+        0%{
+            margin-left: 0;
+        }
+    }
+        
+}

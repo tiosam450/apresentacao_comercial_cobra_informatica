@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação Comercial</title>
+    <link rel="shortcut icon" href="../img/logo_cobra.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function () {
+            $(".containerHeader").load("./header.html");
+        });
+    </script>
+</head>
+
+<body>
+    <section class="container">
+        <header>
+            <div class="containerHeader"></div>
+        </header>
+        <div class="menuHamburger">
+            <input type="checkbox" id="checkbox-menu">
+            <label for="checkbox-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <!-- Aquisição de Equipamentos de Informática -->
+
+        <section class="conteudoPopUp" id="aquisicao">
+
+            <div class="fechar">
+                <img src="../img/icone_fechar.svg" alt="">
+            </div>
+
+            <div class="materiaPopUp">
+
+                <div class="tituloPopUp">
+                    <div class="iconePopUp"><img src="../img/icone_aquisicao.svg" alt=""></div>
+                    <h1>Aquisição de Equipamentos de Informática
+                    </h1>
+                </div>
+                <p>A melhor experiencia na comercialização de seus equipamentos de informática, usados ou obsoletos!</p>
+                <br>
+                <div class="listas">
+                    <div class="lista1">
+                        <p><b>Tipos de equipamentos que adquirimos:</b></p>
+                        <ul>
+                            <li>Notebook</li>
+                            <li>Laptop</li>
+                            <li>Desktop</li>
+                            <li>Servidores</li>
+                            <li>Storage</li>
+                            <li>Impressoras</li>
+                            <li>Monitores</li>
+                            <li>Tablets</li>
+                            <li>Swits</li>
+                            <li>Periféricos</li>
+                        </ul>
+                    </div><br>
+
+                    <div class="lista2">
+                        <p><b>Tipos de Aquisições:</b></p>
+                        <ul>
+                            <li>Equipamentos Obsoletos</li>
+                            <li>Logística Reversa</li>
+                            <li>Retorno de Locação</li>
+                            <li>Provenientes do retorno leasing</li>
+                            <li>Trade in</li>
+                            <li>RMA - Return Merchandise Authorization</li>
+                            <li>Excesso de Inventário</li>
+                            <li>Sobra de Produção</li>
+                            <li>Descontinuados da linha de vendas</li>
+                            <li>Salvados de Seguros 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer>
+            <p>Cobra Informática 2023 © - Todos os direitos reservados</p>
+        </footer>
+
+    </section>
+    <script type="module" src="../scripts.js"></script>
+</body>
+
+</html>

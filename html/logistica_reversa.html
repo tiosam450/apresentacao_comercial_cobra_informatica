@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação Comercial</title>
+    <link rel="shortcut icon" href="../img/logo_cobra.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function () {
+            $(".containerHeader").load("./header.html");
+        });
+    </script>
+</head>
+
+<body>
+    <section class="container">
+        <header>
+            <div class="containerHeader"></div>
+        </header>
+        <div class="menuHamburger">
+            <input type="checkbox" id="checkbox-menu">
+            <label for="checkbox-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <!-- Logística Reversa -->
+        <section class="conteudoPopUp" id="aquisicao">
+            <div class="fechar">
+                <img src="../img/icone_fechar.svg" alt="">
+            </div>
+
+            <div class="tituloPopUp">
+                <div class="iconePopUp"><img src="../img/icone_logistica_reversa.svg" alt=""></div>
+                <h1>Logística Reversa</h1>
+            </div>
+            <div class="materiaPopUp">
+                <p>Realizar a compensação ambiental dos equipamentos de informática da sua empresa é  fundamental para ficar em dia com a lei 12.305 de Logística Reversa.</p><br>
+
+                <p><b>Entenda o fluxo desse processo para garantir a proteção de seus equipamentos:</b></p>
+
+                <div class="grafico">
+                    <img src="../img/grafico_1.svg" alt="">
+                </div>
+
+                <p>A execução da Logística Reversa garante a segurança de Informações, a exclusão permanente de dados digitais a descaracterização da marca em equipamentos e o descarte regulamentado. 
+                </p><br>
+                
+                <P>Credibilidade que completa 100% do fluxo, ou seja desde a fabricação de produtos, o mercado consumidor e a tecnologia para reciclar esses materiais após o uso e inseri-los em novos ciclos produtivos. 
+                </P>
+
+            </div>
+        </section>
+
+
+
+        <footer>
+            <p>Cobra Informática 2023 © - Todos os direitos reservados</p>
+        </footer>
+
+    </section>
+    <script type="module" src="../scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+/* CSS Geral*/
+@import url(./css/style_geral.css);
+
+/* CSS Menu Hamburger */
+@import url(./css/menu_hamburger.css);
+
+/* CSS Menu */
+@import url(./css/style_menu.css);
+
+/* CSS Conteudo*/
+@import url(./css/style_conteudo.css);
+
+/* CSS Pop Up*/
+@import url(./css/style_pop_up.css);
+

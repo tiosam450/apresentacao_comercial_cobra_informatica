@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação Comercial</title>
+    <link rel="shortcut icon" href="../img/logo_cobra.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function () {
+            $(".containerHeader").load("./header.html");
+        });
+    </script>
+</head>
+
+<body>
+    <section class="container">
+        <header>
+            <div class="containerHeader"></div>
+        </header>
+        <div class="menuHamburger">
+            <input type="checkbox" id="checkbox-menu">
+            <label for="checkbox-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <!-- Descaracterização de Equipamentos -->
+        <section class="conteudoPopUp" id="aquisicao">
+            <div class="fechar">
+                <img src="../img/icone_fechar.svg" alt="">
+            </div>
+
+            <div class="tituloPopUp">
+                <div class="iconePopUp"><img src="../img/icone_descaracterizacao.svg" alt=""></div>
+                <h1>Descaracterização de equipamentos</h1>
+            </div>
+            <div class="materiaPopUp">
+                <p>A descaracterização é  um processo importante para a preservação da sua marca, garantindo que os equipamentos descartados estejam em conformidade com a legislação vigente.</p><br>
+
+                <p><b>Entenda como funciona o processo de descaracterização:</b><br><br>
+                    1 - Coleta dos produtos;<br>
+                    2 - Separação e classificação;<br>
+                    3 - Desmontagem (partes e peças);<br>
+                    4 - Descaracterização/ remoção de etiquetas de patrimônio, adesivos e etc;<br>
+                    5 - Destruição de dados digitais;<br>
+                    4 - Descarte dos resíduos.<br>
+                </p><br>
+
+            </div>
+        </section>
+
+
+
+        <footer>
+            <p>Cobra Informática 2023 © - Todos os direitos reservados</p>
+        </footer>
+
+    </section>
+    <script type="module" src="../scripts.js"></script>
+</body>
+
+</html>
